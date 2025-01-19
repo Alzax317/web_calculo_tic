@@ -1,0 +1,126 @@
+header{
+    display: flex;
+    background:rgba(55, 107, 101, 0.9);
+    height: 70%;
+    justify-content: center;
+    position: relative;
+}
+#texto_bajar{
+    align-self: center;
+    font-family: Century Gothic;
+    font-size: 20px;
+    color:#fff;
+    padding-left: 3%;
+}
+#texto_subir{
+    align-self: top;
+    font-family: Century Gothic;
+    font-size: 20px;
+    color:#fff;
+    padding-left: 3%;
+}
+#imagen_cont{
+    display: grid;
+    position: absolute;
+    text-align: right;
+    right: 10px;
+    padding-right: 1%;
+    padding-top: 1%;
+}
+#imagen_cont image{
+    padding: 10%;
+}
+.imagen_abajo{
+    display: grid;
+    padding-top: 20%;
+}
+article{
+    position: relative;
+    float: right;
+    background-color: rgba(30, 30, 30, 0.9);
+    padding-right: 1%;
+    left: -40%;
+    width: 40%;
+    text-align: justify;
+}
+#texto{
+    padding-top: 0%;
+    font-family: Century Gothic;
+    font-size: 18px;
+    color:#fff;
+    padding-left: 3%;
+}
+#intro{
+    padding-top: 0%;
+    padding-left: 0%;
+    float: center;
+    font-family: Century Gothic;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(240, 248, 255);
+    text-align: center;
+}
+
+#title{
+    font-family: Century Gothic;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(249, 249, 249);
+    padding: auto;
+}
+aside {
+    background: rgba(30, 30, 30, 0.9);
+    height: 100%;
+    width: 18%;
+    position: relative;
+    z-index: 100;
+}
+#TituloApartados{
+    padding-top: 5%;
+    padding-bottom: 0%;
+    float: center;
+    font-family: Century Gothic;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(240, 248, 255);
+    text-align: center;
+}
+nav {
+    float: center;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    overflow: hidden; 
+    justify-content: space-between;
+    display: inline-block;
+}
+nav ul li {
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: Century Gothic;
+    font-size: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+}
+nav ul li:hover {
+    background: #ef5a3c;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:-100;
+  }
+
+body{
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black;
+}

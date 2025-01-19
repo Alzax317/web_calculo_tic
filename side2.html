@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="./styles.css">
+    <link type="text/JavaScript" href="./script.js">
+    <title>Página Alejandro Jiménez</title>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src=".\assets\background.mp4#t=48" type="video/mp4">
+  </video>
+      <header id="header">
+        <p id="title">Apartado 2 La paradoja de la Derivada</p>
+        <a id='texto_bajar' href="#bajar">Bajar al fondo</a>
+      </header>
+      <div id="imagen_cont">
+        <iframe src="https://www.desmos.com/calculator/d49r90oywh?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+        <img src="./assets/dif.png" class="imagen" width="150" height="150">
+        <img src="./assets/expresion.png" class="imagen" width="550" height="200">
+        <img src="./assets/derivada.png" class="imagen" width="550" height="350">
+      </div>
+      <main>
+        <article>
+          <p id="intro">¿Qué es una derivada? </p>
+          <p id="texto">-> ¿Es una tasa de cambio instantánea? Pues esta descripción es bastante ambigua, de hecho nos lleva a una serie de paradojas. Parémonos a pensar que una tasa de cambio, por definición, requiere de dos puntos en el tiempo. Coges uno primero, después el segundo, y finalmente determinad qué ha cambiado entre ellos. ¿Cómo va a cambiar algo en un solo punto en el tiempo?</p>
+          <p id="texto">Vamos a partir de un coche moviéndose. Podemos grafiar una función entre la distancia recorrida por el coche (en línea recta) y el tiempo. ¿Qué es la velocidad? Sabemos, que esta es el número que grafica el velocímetro del coche en cada momento. Veamos la gráfica del velocímetro, y que relación tiene con la original, ya que estas están íntimamente relacionadas.</p>
+          <p id="texto">Toca la gráfica de la derecha para ver cómo cambian. La morada la llamaremos s(t) (distancia recorrida) y a la azul v(t) (velocidad). Están relacionadas, cuando la gráfica del movimiento asciende, la gráfica de la velocidad toma valores más altos. Sin Embargo, si la gráfica del movimiento se vuelve más plana, la velocidad toma valores cada vez más cercanos a 0.</p>
+          <p id="intro">¿Cómo calculamos la función derivada?</p>
+          <p id="texto">Tomaremos primero aproximaciones de los valores de esta. Cogeremos fracciones del tiempo (eje x) y fracciones de diferencia de la función. Llamaremos a estos, dt (diferencia de tiempo) y ds (diferencia de velocidad). La tasa de cambio será simplemente ds/dt.</p>
+          <p id="texto">Observamos que para cada dt obtenemos un ds correspondiente. Esta dependencia viene simplemente del orden de las variables en la función. (Variable dependiente e independiente) Ahora es cuando viene la clave, al calcular este ds/dt obtenemos la siguiente expresión.</p>
+          <p id="texto">Observad el hecho de que estamos tratando esta tasa de cambio como una función en si misma (de ahí el (dt)). En vez de tratar dt como una resta de instantes de tiempo, (tfinal - t inicial), dejamos simplemente la expresión dt. Asignamos un valor de t a la expresión, y obtenemos una tasa de cambio. ¿Qué es dt exactamente?. A la hora de calcular una tasa de cambio, tendríamos que definir la cantidad de tiempo entre los instantes tfinal y tinicial, sin embargo, en vez de esto, vamos a trabajar con dt, y calcular el límite cuando este tiende a 0.</p>
+          <p id="intro">¿Cómo definiríamos una derivada?</p>
+          <p id="texto">En contraste con la idea inicial de tasa de cambio instantánea, vemos lo que significa hacer un límite. El límite cuando dt tiende a 0 no es sustituir dt por cero. Por tanto, con este concepto entre manos, podríamos decir que una derivada es "La mejor aproximación posible a una tasa de cambio en un instante de t". Este límite tiene diferentes propiedades, como la formacíon de la recta tanjente a la gráfica, sin embargo, lo veremos en siguientes apartados.</p>
+          <div id="bajar">
+            <a href="#header" id="texto_subir">Subir</a>
+          </div>
+        </article>
+        <aside>
+          <nav>
+            <p id="TituloApartados">Lista de Apartados: </p>
+            <ul>
+              <li><a href="./index.html">Página Principal</a></li>
+              <li><a href="./side1.html">Esencia del Cálculo</a></li>
+              <li><a href="#">La Paradoja de la Derivada</a></li>
+              <li><a href="./side3.html">Visualización de Fórmulas de Derivadas</a></li>
+              <li><a href="./side4.html">El Número de Euler</a></li>
+              <li><a href="./extra.html">Extra</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </main>
+
+</body>
+</html>

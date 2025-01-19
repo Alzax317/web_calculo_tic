@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="./styles.css">
+    <link type="text/JavaScript" href="side1.js">
+    <title>Página Alejandro Jiménez</title>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src=".\assets\background.mp4#t=23" type="video/mp4">
+  </video>
+      <header id="header">
+        <p id="title">Apartado 1 Primera esencia del cálculo</p>
+        <a id='texto_bajar' href="#bajar">Bajar al fondo</a>
+      </header>
+      <div id="imagen_cont">
+        <img src="./assets/cir_mal_dividido.png" class="imagen" width="210" height="200">
+        <img src="./assets/cir_dividido.png" class="imagen" width="210" height="200">
+        <img src="./assets/dr.png" class="imagen" width="380" height="100">
+        <img src="./assets/circulo.png" class="imagen" width="400" heigh="70">
+        <img src="./assets/aprox.png" class="imagen" width="200" heigh="200">
+        <img src="./assets/aprox2.png" class="imagen" width="200" heigh="200">
+        <img src="./assets/final.png" class="imagen" width="360" heigh="350">
+      </div>
+      
+      <main>
+        <article>
+          <p id="intro">¿Qué es el Cálculo Infinitesimal? </p>
+          <p id="texto">Vamos a comenzar por un ejemplo práctico. El cálculo se descubrió ya en la antigua grecia, cuando algunos filósofos griegos denotaron el área y volumen de algunos cuerpos usando sumas infinitas. Vamos a hacer un procveso homólogo, calculando el área de un círculo.</p>
+          <p id="intro">¿Cómo calcular el área de un círculo? </p>
+          <p id="texto">Nuestro problema comienza así: solo nosotros, y nuestro Círculo. Para calcular su área, podemos empezar dividiéndolo de diferentes formas. Claro que podemos escoger cualquiera, pero decidimos esta, ya que observamos que las divisiuones tienen simetría respecto del círculo original, lo cual (creemos) que puede resultar beneficioso. Aquí ha una imagen de ejemplo de división poco útil, y la que escogemos para estudiar nuestro círculo.</p>
+          <p id="intro">Variando con las divisiones: </p>
+          <p id="texto">Respecto al tamaño de dichas divisiones, denotamos "dr" a la distancia entre una y otra, y si observamos una de estas divisiones en concreto, veremos que su circunferencia es 2piR, esta formula se obtiene por la definición de pi, circunferencia/diámetro</p>
+          <p id="texto">Es importante hacer incapié en qué es "dr". Este nombre viene de "diferencia de radio". Es simplemente una distancia (variable) que escogemos para dividir cada sección, en este caso diremos que dr = 0.1</p>
+          <p id="intro">Sumando para obtener el Área: </p>
+          <p id="texto">Observamos que a medida que escogemos un dr más pequeño, estos sectores circulares se van pareciendo más a un rectángulo. Podemos apropximar su área a 2piR*dr (base por altura). El área del circulo aproximada, será sumar todos estos pequeños rectángulos. Al poner todos los rectángulos uno al lado del otro, vemos que forman una estructura triangular, dónde la recta "2piR" marca el mismo área de los rectángulos. También observamos que a medida que dr es más pequeño, más se aproximan los rectángulos al área bajo la recta.</p>
+          <p id="intro">Obteniendo el área: </p>
+          <p id = texto>¿Cuál es el área de debajo de la recta? Bueno, es un triángulo, por lo que es base por altura entre 2. la base es la función 2piR, por la altura del triángulo, que es R. AL hacer la fórmula del triángulo, obtenemos R*2*pi*R/2 que es igual a piR^2. La fórmula que todos conocemos!</p>
+          <p id="intro">¿Qué hemos hecho exactamente aquí? </p>
+          <p id =texto>Hemos cogido un problema complicado, y lo hemos dividido para simplificarlo. Después, lo hemos planteado de otra forma, calculando el área de debajo de una función. La riqueza matemática viene de que muchos problemas complicados, pueden ser planteados como el área de una función, y nuestro método de dividir en muchas partes muy pequeñas, sirve para cualquier función.</p>
+          <div id="bajar">
+            <a href="#header" id="texto_subir">Subir</a>
+          </div>
+        
+        </article>
+        <aside>
+          <nav>
+            <p id="TituloApartados">Lista de Apartados: </p>
+            <ul>
+              <li><a href="./index.html">Página Principal</a></li>
+              <li><a href="#">Esencia del Cálculo</a></li>
+              <li><a href="./side2.html">La Paradoja de la Derivada</a></li>
+              <li><a href="./side3.html">Visualización de Fórmulas de Derivadas</a></li>
+              <li><a href="./side4.html">El Número de Euler</a></li>
+              <li><a href="./extra.html">Extra</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </main>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="./styles.css">
+    <link type="text/JavaScript" href="./script.js">
+    <title>Página Alejandro Jiménez</title>
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src=".\assets\background.mp4#t=112" type="video/mp4">
+  </video>
+      <header id="header">
+        <p id="title">Apartado 4 La Belleza del Número e</p>
+        <a id='texto_bajar' href="#bajar">Bajar al fondo</a>
+      </header>
+      <div id="imagen_cont">
+        <img src="./assets/expo1.png" class="imagen" width="400" height="300">
+        <img src="./assets/expo2.png" class="imagen" width="400" height="250">
+        <img src="./assets/expo3.png" class="imagen" width="500" height="250">
+        <img src="./assets/expo4.png" class="imagen" width="500" height="160">
+
+        
+      </div>
+      <main>
+        <article>
+          <p id="intro">Derivadas de funciones exponenciales</p>
+          <p id="texto">Acabo de ver el vídeo correspondiente a este apartado y casi salto de alegría al ver lo bonito que es. Sólo parémonos a pensar en el hecho de que la derivada de e^x sea e^x, cómo el fénix que se rehace de sus propias cenizas. Bueno quizá nos estemos volviendo muy poéticos, pero es muy bonito.</p>
+          <p id="texto">Vamos a trabajar con propiedades numéricas, ya que no hay forma prácticar de visualizar exponenciales geométricamente. Durante todo el rato, haremos símiles con poblaciones que se multiplican (bacterias en un tarro). Aunque haremos incapié importante en ciertos aspecos esenciales.</p>
+          <p id="texto">Nuevamente, no voy a cubrir todos los aspectos del vídeo, intentaré ceñirme a lo esencial.</p>
+          <p id="intro">Funciones exponenciales</p>
+          <p id="texto">A la hora de trabajar con la derivada de funciones exponenciales, observaremos algo bastante curioso. Imaginemos una población que se duplica cada día, de bacterias por ejemplo, veremos que cada día, la tasa de cambio está muy relacionada con la anterior. Imaginemos que nuestra población empieza con una bacteria que se duplica cada día. Del día 3 al cuatro, tendremos una tasa de cambio de 8 bacterias / 1 día. Del día 4 al 5, una tasa de 16 bacterias / 1 día. Del día 5 al 6, una tasa de 32 bacterias... Vale ya vemos por dónde van los tiros.</p>
+          <p id="intro">Cómo continuar</p>
+          <p id="texto">Cada derivada se va duplicando, lo cual está en relación con la propia función. Sin embargo, al hacer la derivada en un instante concreto, vemos que este resultado no es completamente certero. Observemos la expresión analítica de las imágenes. Ocurre algo muy curioso, y es que el factor 2^t no depende de dt. Esto quiere decir que su derivada es, ella misma, pero en proporción de una constante misteriosa, 0.69...</p>
+          <p id="intro">El número e</p>
+          <p id="texto">Nos haremos la siguiente pregunta. Este caso no es exclusivo del número 2, sino aplicable a cualquier base. Bien, ¿Existe alguna base para la cual dicha constante, sea igual a uno? Es decir, que la derivada sea ella misma. Sorpresa, el número e.</p>
+          <p id="texto">El cálculo del número e se demuestra mediante un límite, y su implicación en estas derivadas demuestra que la constante misteriosa de 2^t, es ln(2). Sin embargo, no estraremos en detalles de esto.</p>
+          <div id="bajar">
+            <a href="#header" id="texto_subir">Subir</a>
+          </div>
+        </article>
+        <aside>
+          <nav>
+            <p id="TituloApartados">Lista de Apartados: </p>
+            <ul>
+              <li><a href="./index.html">Página Principal</a></li>
+              <li><a href="./side1.html">Esencia del Cálculo</a></li>
+              <li><a href="./side2.html">La Paradoja de la Derivada</a></li>
+              <li><a href="./side3.html">Visualización de Fórmulas de Derivadas</a></li>
+              <li><a href="#">El Número de Euler</a></li>
+              <li><a href="./extra.html">Extra</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </main>
+
+</body>
+</html>
